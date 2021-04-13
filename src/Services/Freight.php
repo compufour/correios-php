@@ -343,10 +343,15 @@ class Freight implements FreightInterface
             ];
         }
 
+        $price = floatval(number_format(str_replace(
+            ",",".",
+            str_replace(".", "", $service["Valor"])
+        ), 2, ".", ""));
+
         return [
             'name' => $this->friendlyServiceName($service['Codigo']),
             'code' => $service['Codigo'],
-            'price' => floatval(str_replace(',', '.', $service['Valor'])),
+            'price' => $price,
             'deadline' => intval($service['PrazoEntrega']),
             'error' => $error,
         ];

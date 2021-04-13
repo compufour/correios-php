@@ -1,9 +1,9 @@
 {
-    "name": "flyingluscas/correios-php",
+    "name": "compufour/correios-php",
     "type": "library",
     "description": "Uma maneira fácil de interagir com as principais funcionalidades dos Correios.",
     "keywords": [
-        "flyingluscas",
+        "compufour",
         "correios-php",
         "correios",
         "frete",
@@ -11,7 +11,7 @@
         "rastreio",
         "cep"
     ],
-    "homepage": "https://github.com/flyingluscas/correios-php",
+    "homepage": "https://github.com/compufour/correios-php",
     "license": "MIT",
     "authors": [
         {
